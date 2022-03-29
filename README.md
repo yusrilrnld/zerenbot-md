@@ -1,7 +1,7 @@
 # BunnyWalker-Bot
 Script WhatsApp Bot Multi Device
 
-## NOTE : Perhatikan Warning [`❗ Warning`](https://github.com/clicknetcafe/zerenbot-md/blob/master/README.md#L65)
+## NOTE : Perhatikan [`❗ Warning`](https://github.com/clicknetcafe/zerenbot-md/blob/master/README.md#L65)
 This Script is for everyone, original base by [`Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 
 <p align="center">
