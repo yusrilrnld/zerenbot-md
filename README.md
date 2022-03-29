@@ -1,7 +1,7 @@
 # BunnyWalker-Bot
 Script WhatsApp Bot Multi Device
 
-## NOTE
+## NOTE : Perhatikan Warning [`❗ Warning`](https://github.com/clicknetcafe/zerenbot-md/blob/master/README.md#L65)
 This Script is for everyone, original base by [`Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 
 <p align="center">
@@ -67,9 +67,9 @@ WhatsApp bot is still in the development stage, so there are a few bugs
 WhatsApp Connection (BETA, not working perfectly)
 
 Editing Number Owner & session name in [`config.js`](https://github.com/clicknetcafe/zerenbot-md/blob/master/config.js)
-Get Apikey zenz on [`LolHuman`](https://api.lolhuman.xyz/pricing)
+Get Lol Apikey on [`LolHuman`](https://api.lolhuman.xyz/pricing)
 
-If QRCOde not shown, change server in [`index.js`](https://github.com/clicknetcafe/zerenbot-md/blob/master/index.js#L59)
+If QRCode not shown, change server in [`index.js`](https://github.com/clicknetcafe/zerenbot-md/blob/master/index.js#L59)
 Or try use my [`node_modules`](https://drive.google.com/file/d/1d5jAckexDLvW54iAAnN4PgjrWgPg1Y6l/view?usp=sharing)
 
 
