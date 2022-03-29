@@ -56,7 +56,7 @@ if (global.db) setInterval(async () => {
 
 async function startHisoka() {
     //let version = await fetchJson('https://dikaardnt.vercel.app/other/wawebversion')
-    let version = [2, 2210, 9]
+    let version = [2, 2210, 9] // try different version
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
