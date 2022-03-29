@@ -1,19 +1,19 @@
-# Hisoka-Morou
+# BunnyWalker-Bot
 Script WhatsApp Bot Multi Device
 
 ## NOTE
-This Script is for everyone, not for Sale
+This Script is for everyone, original base by [`Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 
 <p align="center">
-	<img src="https://telegra.ph/file/09cc0981ccf07754d0af6.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://i.ibb.co/tmQVScZ/zero.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">Hisoka-Morou</h1>
+<h1 align="center">BunnyWalker-Bot</h1>
 
 This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 
 ## My Project
-WhatsApp Bot normal [`DikaArdnt/Hisoka-Morrow`](https://github.com/DikaArdnt/Hisoka-Morrow)
-WhatsApp Bot Multi Device [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
+WhatsApp Bot normal [`clicknetcafe/scvbot-last`](https://github.com/clicknetcafe/scvbot-last)
+WhatsApp Bot Multi Device [`clicknetcafe/zerenbot-md`](https://github.com/clicknetcafe/zerenbot-md)
 
 
 ## UNTUK PENGGUNA WINDOWS/RDP
@@ -24,8 +24,8 @@ WhatsApp Bot Multi Device [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdn
 
 
 ```bash
-git clone https://github.com/DikaArdnt/Hisoka-Morou
-cd Hisoka-Morou
+git clone https://github.com/clicknetcafe/zerenbot-md
+cd zerenbot-md
 npm install
 ```
 
@@ -45,8 +45,8 @@ apt update && apt upgrade
 apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
-git clone https://github.com/DikaArdnt/Hisoka-Morou
-cd Hisoka-Morou
+git clone https://github.com/clicknetcafe/zerenbot-md
+cd zerenbot-md
 npm install
 ```
 
@@ -66,8 +66,11 @@ $ node .
 WhatsApp bot is still in the development stage, so there are a few bugs
 WhatsApp Connection (BETA, not working perfectly)
 
-Editing Number Owner & session name in [`config.js`](https://github.com/DikaArdnt/Hisoka-Morou/blob/master/config.js)
-Get Apikey zenz on [`zenz`](https://zenzapi.xyz/pricing)
+Editing Number Owner & session name in [`config.js`](https://github.com/clicknetcafe/zerenbot-md/blob/master/config.js)
+Get Apikey zenz on [`LolHuman`](https://api.lolhuman.xyz/pricing)
+
+If QRCOde not shown, change server in [`index.js`](https://github.com/clicknetcafe/zerenbot-md/blob/master/index.js#L59)
+Or try use my [`node_modules`](https://drive.google.com/file/d/1d5jAckexDLvW54iAAnN4PgjrWgPg1Y6l/view?usp=sharing)
 
 
 ## Thanks To
@@ -79,11 +82,10 @@ Get Apikey zenz on [`zenz`](https://zenzapi.xyz/pricing)
 License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
 Support Me
-* [`Paypal`](https://www.paypal.me/Cakhaho)
-* [`Saweria`](https://saweria.co/DikaArdnt)
+* Pulsa / OVO / Dana [082337245566]
+* [`Saweria`](https://saweria.co/clicknetcafe)
 
 ## Contact Me
-* [`Wangsap`](https://wa.me/6288292024190)
-* [`Igeh`](https://instagram.com/cak_haho)
-* [`Pesbuk`](https://www.facebook.com/Haho.id)
+* [`WhatsApp`](https://wa.me/6282337245566)
+* [`Facebook`](https://www.facebook.com/dikzsaga)
 
