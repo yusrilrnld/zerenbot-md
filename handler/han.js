@@ -382,7 +382,8 @@ exports.menus = (prefix, namebot) => {
 ├ • ${prefix}phcomment
 ├ • ${prefix}ssweb
 ├ • ${prefix}stiker
-├ • ${prefix}fakedonald text
+├ • ${prefix}fakedonald
+├ • ${prefix}yugioh
 │
 ├──「 ✏️ *TOOLS MENU* 」
 ├ • ${prefix}tools / ${prefix}moretools
