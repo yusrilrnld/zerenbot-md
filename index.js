@@ -226,7 +226,7 @@ async function startHisoka() {
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
             templateMessage: {
                 hydratedTemplate: {
-                imageMessage: message.imageMessage,
+                locationMessage: { jpegThumbnail: nais},
                     "hydratedContentText": text,
                     "hydratedFooterText": footer,
                     "hydratedButtons": but
