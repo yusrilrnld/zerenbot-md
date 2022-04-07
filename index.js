@@ -1,5 +1,5 @@
 /**
-   * Modded By Zerenity.
+   * Modded by Zerenity.
    * Contact Me on wa.me/6282337245566
    * Follow https://github.com/clicknetcafe
 */
@@ -42,31 +42,30 @@ global.db = new Low(
 global.db.data = {
     users: {},
     chats: {},
-    sticker: {},
     database: {},
     game: {},
     settings: {},
     others: {},
+    sticker: {},
     ...(global.db.data || {})
 }
 
+// save database every 30seconds
 if (global.db) setInterval(async () => {
     if (global.db.data) await global.db.write()
   }, 30 * 1000)
 
 async function startHisoka() {
-    //let version = await fetchJson('https://dikaardnt.vercel.app/other/wawebversion')
-    let version = [2, 2210, 9] // try different version
     const hisoka = hisokaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Hisoka Multi Device','Safari','1.0.0'],
-        auth: state,
-        version
+        auth: state
     })
 
     store.bind(hisoka.ev)
-
+    
+    // anticall auto block
     hisoka.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
@@ -91,6 +90,29 @@ async function startHisoka() {
         } catch (err) {
             console.log(err)
         }
+    })
+    
+    // Group Update
+    hisoka.ev.on('groups.update', async pea => {
+       //console.log(pea)
+    // Get Profile Picture Group
+       try {
+       ppgc = await hisoka.profilePictureUrl(pea[0].id, 'image')
+       } catch {
+       ppgc = 'https://i.ibb.co/Nsf6zGV/images.jpg'
+       }
+       let wm_fatih = { url : ppgc }
+       if (pea[0].announce == true) {
+       hisoka.send5ButImg(pea[0].id, `「 Group Settings Change 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message`, wm_fatih, [])
+       } else if(pea[0].announce == false) {
+       hisoka.send5ButImg(pea[0].id, `「 Group Settings Change 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message`, wm_fatih, [])
+       } else if (pea[0].restrict == true) {
+       hisoka.send5ButImg(pea[0].id, `「 Group Settings Change 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message`, wm_fatih, [])
+       } else if (pea[0].restrict == false) {
+       hisoka.send5ButImg(pea[0].id, `「 Group Settings Change 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message`, wm_fatih, [])
+       } else {
+       hisoka.send5ButImg(pea[0].id, `「 Group Settings Change 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+     }
     })
 
     hisoka.ev.on('group-participants.update', async (anu) => {
@@ -221,34 +243,53 @@ async function startHisoka() {
      * @param {*} options
      * @returns
      */
-    hisoka.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) => {
+
+    // buat tampilan menu pakai message location
+    hisoka.send5ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
         let message = await prepareWAMessageMedia({ image: img }, { upload: hisoka.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-            templateMessage: {
-                hydratedTemplate: {
-                locationMessage: { jpegThumbnail: nais},
-                    "hydratedContentText": text,
-                    "hydratedFooterText": footer,
-                    "hydratedButtons": but
-                }
+        templateMessage: {
+        hydratedTemplate: {
+        locationMessage: { jpegThumbnail: nais},
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
             }
-        }), options)
-        hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
+            }
+            }), options)
+            hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
+    // Buat Broadcast Video
     hisoka.send6ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
         let message = await prepareWAMessageMedia({ video: img }, { upload: hisoka.waUploadToServer })
         var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-            templateMessage: {
-                hydratedTemplate: {
-                    videoMessage: message.videoMessage,
-                    "hydratedContentText": text,
-                    "hydratedFooterText": footer,
-                    "hydratedButtons": but
-                }
+        templateMessage: {
+        hydratedTemplate: {
+        videoMessage: message.videoMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
             }
-        }), options)
-        hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
+            }
+            }), options)
+            hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
+    }
+
+    // Buat Broadcast Gambar
+    hisoka.send7ButImg = async (jid , text = '' , footer = '', img, but = [], options = {}) =>{
+        let message = await prepareWAMessageMedia({ image: img }, { upload: hisoka.waUploadToServer })
+        var template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+        templateMessage: {
+        hydratedTemplate: {
+        imageMessage: message.imageMessage,
+               "hydratedContentText": text,
+               "hydratedFooterText": footer,
+               "hydratedButtons": but
+            }
+            }
+            }), options)
+            hisoka.relayMessage(jid, template.message, { messageId: template.key.id })
     }
 
     /**
