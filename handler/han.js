@@ -780,6 +780,7 @@ exports.menuowner = (prefix, namebot) => {
 ├ • ${prefix}setexif
 ├ • ${prefix}bc
 ├ • ${prefix}bcgc
+├ • ${prefix}bcmeme
 ├ • ${prefix}public
 ├ • ${prefix}self
 ├ • ${prefix}block
