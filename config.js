@@ -1,13 +1,13 @@
 /**
-   * Create By Dika Ardnt.
-   * Contact Me on wa.me/6288292024190
-   * Follow https://github.com/DikaArdnt
+   * Modded by Zerenity.
+   * Contact Me on wa.me/6282337245566
+   * Follow https://github.com/clicknetcafe
 */
 
 const fs = require('fs')
 const chalk = require('chalk')
 
-// Website Api
+/*// Website Api
 global.APIs = {
 	lol: 'https://api.lolhuman.xyz',
 }
@@ -15,10 +15,10 @@ global.APIs = {
 // Apikey jangan diisi, isi dibawah
 global.APIKeys = {
 	'https://api.lolhuman.xyz': 'apikey',
-}
+}*/
 
-// Other (apikey isi disini)
-global.LolApiKey = 'apikeylu'
+// Ganti apikey lolhuman dan imgbbkey punya lu
+global.LolApiKey = 'hc8fyhce33ncq34uif'
 global.Imgbb = '7b2fde1f55b9a594d5db403f0a0c2712'
 global.owner = ['6282337245566']
 global.premium = ['6282337245566']
@@ -27,6 +27,8 @@ global.author = 'Bot'
 global.sessionName = 'hisoka'
 global.prefa = ['!','.']
 global.sp = '⭔'
+// Ganti grup WA lu kalo pengen
+global.gwa = 'https://chat.whatsapp.com/LFNBGiKvxlQ08za3Y0W9CI'
 global.mess = {
     success: '✓ Success',
     admin: 'Fitur Khusus Admin Group!',
