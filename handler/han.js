@@ -225,6 +225,18 @@ exports.rules = () => {
 ━━━━━━━━━━━━━━━━━━━━━━━━`
 }
 
+exports.donasi = (namebot) => {
+  return`╭─「 🧚🏻‍♂️ *DONASI* 」
+│
+├ PULSA / OVO / DANA :
+├ • *082337245566*
+│
+├ SAWERIA
+├ _https://saweria.co/clicknetcafe_
+│
+╰───「 ${namebot} 」`
+}
+
 exports.bahasa = () => {
 	return`
 *List Bahasa :*\n
