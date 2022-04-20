@@ -496,6 +496,13 @@ exports.menuanime = (prefix, namebot) => {
 ├ • ${prefix}megumin
 ├ • ${prefix}elaina
 ├ • ${prefix}wallnime
+├ • ${prefix}uniform
+├ • ${prefix}maid
+├ • ${prefix}marin-kitagawa
+├ • ${prefix}mori-calliope
+├ • ${prefix}raiden-shogun
+├ • ${prefix}oppai
+├ • ${prefix}selfies
 │
 ├──「 ✨ *RANDOM MP4* 」
 ├ • ${prefix}feed
