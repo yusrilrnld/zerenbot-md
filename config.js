@@ -38,7 +38,7 @@ global.mess = {
     private: 'Fitur Digunakan Hanya Untuk Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
     wait: 'Loading...',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
+    endLimit: 'Limit Harian Anda Habis, Limit Direset Setiap Pukul 12:00 AM GMT+7',
 }
 global.limitawal = {
     premium: "Infinity",
