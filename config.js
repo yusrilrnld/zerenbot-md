@@ -20,15 +20,15 @@ global.APIKeys = {
 // Ganti apikey lolhuman dan imgbbkey punya lu
 global.LolApiKey = 'hc8fyhce33ncq34uif'
 global.Imgbb = '7b2fde1f55b9a594d5db403f0a0c2712'
-global.owner = ['6282337245566']
-global.premium = ['6282337245566']
-global.packname = 'BunnyWalker'
+global.owner = ['6282252875751']
+global.premium = ['6282252875751']
+global.packname = '4YOU-MD'
 global.author = 'Bot'
 global.sessionName = 'hisoka'
 global.prefa = ['!','.']
 global.sp = '⭔'
 // Ganti grup WA lu kalo pengen
-global.gwa = 'https://chat.whatsapp.com/LyPlkhIyMwPLnAM43nBCYR'
+global.gwa = 'https://chat.whatsapp.com/DLbznbwoQfC4Pf0a6InTe4'
 global.mess = {
     success: '✓ Success',
     admin: 'Fitur Khusus Admin Group!',
@@ -42,7 +42,7 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 60
+    free: 30
 }
 global.thumb = fs.readFileSync('./lib/hisoka.jpg')
 
